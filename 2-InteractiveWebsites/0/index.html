@@ -7,7 +7,10 @@
   <body>
     <section class="container">
       <img src="normal.png" id="myImage" />
-      <p onclick="blooming()">Codecademy</p>
+      <div class="text-container">
+        <p onclick="blooming()">Codecademy</p>
+        <p onclick="Hello()">Hello World</p>
+      </div>
     </section>
 
     <!-- Paste your code in the script element below:  -->
@@ -19,6 +22,10 @@
         } else {
           image.src = "normal.png";
         }
+      }
+
+      function Hello() {
+        alert("Hello World");
       }
     </script>
   </body>
