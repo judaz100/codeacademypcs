@@ -1,0 +1,32 @@
+// Write your function here:
+const calculateWeight = (earthWeight , planet) => {
+  if (typeof(earthWeight)==="number" && typeof(planet) ==="string"){
+    switch(planet) {
+      case('Mercury'):
+        return weight = earthWeight *0.378;
+        break;
+      case('Venus'):
+        return weight = earthWeight *0.907;
+        break;
+      case('Mars'):
+        return weight = earthWeight *0.377;
+        break;
+      case('Jupiter'):
+        return weight = earthWeight *2.36;
+        break;
+      case('Saturn'):
+        return weight = earthWeight *0.916;
+        break;
+      default:
+        return 'Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.'
+    }
+  }
+}
+
+// Uncomment the line below when you're ready to try out your function
+console.log(calculateWeight(100, 'Jupiter')) // Should print 236
+
+// We encourage you to add more function calls of your own to test your code!
+console.log(calculateWeight(100, 'Mars')) // Should print 37.7
+console.log(calculateWeight(100, 'Saturn')) // Should print 91.6
+console.log(calculateWeight(100, 'Mercury')) // Should print 236

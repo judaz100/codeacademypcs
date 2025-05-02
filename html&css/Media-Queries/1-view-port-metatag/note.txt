@@ -1,0 +1,4 @@
+https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag#viewport_basics
+
+breakpoints
+https://content.codecademy.com/courses/freelance-1/unit-5/screen-sizes.png?_gl=1*1bh6s9q*_gcl_aw*R0NMLjE3MzQ2NTczMzYuQ2p3S0NBaUFwWS03QmhCakVpd0FRTXJyRWZ6S0tBZjBqTjdMRVRoWDJEV0lXVlFPT3JsN2ZBRHppdDItWUN4aXA0S2g4NUNmQW92aVNCb0NqQzBRQXZEX0J3RQ..*_gcl_au*OTU2MjI4OTA3LjE3Mzc0MjIwNjU.*_ga*MTE5MTkwODg2Ni4xNzI5NjI5MzYz*_ga_3LRZM6TM9L*MTczNzQyMjA2NS40My4xLjE3Mzc0MzA3NDEuNjAuMC4w

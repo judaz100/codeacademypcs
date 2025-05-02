@@ -1,0 +1,17 @@
+.grid {
+  border: 2px blue solid;
+  height: 500px;
+  display: grid;
+  width: 400px; /*Este es el ancho de la grilla*/
+  /* grid-template-columns: 100px 200px; Esta propiedad define el ancho de cada colmna una de 100 y una de 200*/
+  /* grid-template-columns: 20% 50%;  Ests define el tamaño de las dos columnas en porcentajes*/
+  /* grid-template-columns: 20px 40% 60px;  este mezla porcentajes y pixeles en la definicion de 3 columnas*/
+  grid-template-columns: 100px 50% 200px; /** esta configuracion muestra por fuera pero mas adelante se explicara como solve*/
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}

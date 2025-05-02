@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  border: 2px blue solid;
+  height: 500px;
+  width: 500px;
+  grid-template: repeat(4, 1fr 2fr) / repeat(4, 3fr 2fr);
+  gap: 5px;
+}
+
+.item {
+  grid-column: 4 / span 2; /**este inicia en la columna 4 y toma hasta dos columnas del espacio.
+  seria lo mismo que 
+  grid-column:4/6 
+  o
+  grid-column-start: 4;
+  grid-column-end: span 2;
+  o
+  grid-column-start: span 2;
+  grid-column-end: 6;
+  **/
+}
+
+.a {
+  grid-row: 5 / 7;
+  /** grid-column-start: 1;
+  grid-column-end: 3; esto se refactoriza por:**/
+  grid-column: 1 / span 2;
+}
+
+.b {
+  grid-row: 2 / span 3; /**el elemento b arranca en la fila dos hasta 4**/
+  grid-column: 2 / span 6; /**la columna inicial es 2 y ocupa hasta 6 columnas**/
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}

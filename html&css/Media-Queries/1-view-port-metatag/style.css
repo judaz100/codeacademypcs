@@ -1,0 +1,176 @@
+html,
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Space Mono", sans-serif;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: GhostWhite;
+}
+
+body {
+  background-image: url("./img/space.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Title and Description */
+
+.page-title {
+  text-align: center;
+  margin: auto;
+  line-height: 2em;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  background-image: url("./img/spaceship.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 1em;
+}
+
+.page-title h1 {
+  display: inline-block;
+}
+
+.main {
+  text-align: center;
+}
+
+.page-description {
+  font-size: 0.8rem;
+  padding: 30px;
+}
+
+.learn-more {
+  color: DarkOrange;
+  text-decoration: none;
+  display: block;
+  margin: 25px 0 0 0;
+  font-weight: bold;
+}
+
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  margin: 20px;
+}
+
+.gallery-item .thumbnail {
+  width: 240px;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+}
+
+/* Footer Navigation */
+
+nav {
+  margin-top: 30px;
+}
+
+nav ul {
+  display: block;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px 0 0;
+  color: GhostWhite;
+}
+
+nav a {
+  line-height: 60px;
+  border: 1px solid GhostWhite;
+  padding: 7px;
+  border-radius: 4px;
+  color: DarkOrange;
+  text-decoration: none;
+}
+
+.contact-btn {
+  cursor: pointer;
+  margin: 20px 30px;
+  text-align: center;
+}
+
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
+}
+/**The selected code is a CSS media query that applies 
+styles when the screen width is 480px or less. 
+It changes the .page-title class’s width to 270px, 
+making the website more responsive on smaller screens. 
+This helps ensure that the content fits well on mobile devices.**/
+@media only screen and (max-width: 480px) {
+  .page-title {
+    width: 270px;
+  }
+}
+
+/**The selected code is a CSS media query that applies styles 
+when the screen width is between 320px and 480px. It sets the width of
+ .gallery-item .thumbnail to 95%, making images more responsive and fit 
+ better on smaller screens. despues se agrego una condicion con coma para
+ cumplir si el dispositivo estaba en portrait**/
+@media only screen and (min-width: 320px) and (max-width: 480px),
+  (orientation: portrait) {
+  .gallery-item .thumbnail {
+    width: 95%;
+  }
+}
+
+/**The selected code uses a media query to apply styles when the screen 
+resolution is at least 150dpi. 
+It changes the background-image of the .
+logo class to a higher resolution image, 
+ensuring that the logo appears crisp on high-resolution displays.**/
+@media only screen and (min-resolution: 150dpi) {
+  .logo {
+    background-image: url("../img/spaceship@2x.png");
+  }
+}
+/**The selected code uses a media query to apply styles when 
+the screen’s maximum resolution is 150dpi and the maximum width is 480px.
+ It changes the .page-description class’s font-size to 20px,
+ making text larger for high-resolution small screens.**/
+@media only screen and (max-resolution: 150dpi) and (max-width: 480px) {
+  .page-description {
+    font-size: 20px;
+  }
+}
+
+/**The selected code uses a media 
+query to apply styles only when
+ the screen width is between 768px and 1024px. 
+ It sets the .page-title and .page-description 
+ elements to float left and have a width of 20em,
+  aligning text to the left. This helps make the website 
+  responsive by adjusting the layout for medium-sized screens.**/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .page-title,
+  .page-description {
+    float: left;
+    width: 20em;
+  }
+
+  .page-description {
+    text-align: left;
+  }
+}

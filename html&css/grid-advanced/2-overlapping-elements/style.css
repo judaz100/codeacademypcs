@@ -1,0 +1,46 @@
+.container {
+  display: grid;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  gap: 10px;
+  grid-template: repeat(12, 1fr) / repeat(6, 1fr);
+}
+
+h1,
+h2,
+h3 {
+  font-family: monospace;
+  text-align: center;
+}
+
+header {
+  background-color: dodgerblue;
+  grid-area: 1 / 1 / 3 / 7;
+}
+
+nav {
+  background-color: beige;
+  grid-area: 3 / 1 / 4 / 7;
+}
+
+.left {
+  background-color: dodgerblue;
+  grid-area: 4 / 1 / 9 / 5; /**el elemento left usa las filas de la 4 a la 8 y las columnas de la 5 a la 6**/
+}
+
+.right {
+  background-color: beige;
+  grid-area: 4 / 5 / 9 / 7; /**el elemento right usa las filas de la 4 a la 8 y las columnas de la 5 a la 6**/
+}
+
+.overlap {
+  background-color: lightcoral;
+  grid-area: 6 / 4 / 8 / 6; /** Spans las filas 6 y 7 y las columnas 4 y5 **/
+  z-index: 5; /**para que sobresalga el objeto overlap sobre el right**/
+}
+
+footer {
+  background-color: dodgerblue;
+  grid-area: 9 / 1 / 13 / 7;
+}

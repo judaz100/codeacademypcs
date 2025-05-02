@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+}
+
+.container {
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: seashell;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.mission {
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*1j6d6e0*_gcl_aw*R0NMLjE3MzQ2NTczMzYuQ2p3S0NBaUFwWS03QmhCakVpd0FRTXJyRWZ6S0tBZjBqTjdMRVRoWDJEV0lXVlFPT3JsN2ZBRHppdDItWUN4aXA0S2g4NUNmQW92aVNCb0NqQzBRQXZEX0J3RQ..*_gcl_au*MjE4NDYxMTAzLjE3Mjk2MjkyNDU.*_ga*MTE5MTkwODg2Ni4xNzI5NjI5MzYz*_ga_3LRZM6TM9L*MTczNjc4MDIxOC4zMC4xLjE3MzY3ODEwMjcuNjAuMC4w");
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.mission-content {
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 20px;
+  opacity: 0.9;
+}
+.teaMonth {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teaMonth-content {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.teas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cards {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.teaMonth-content img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: seashell;
+  opacity: 0.9;
+  display: flex;
+  bottom: 20px;
+  margin-left: 20px;
+}

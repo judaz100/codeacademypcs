@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  background-color: black;
+  opacity: 0.9;
+  font-size: 22px;
+  color: seashell;
+}
+
+.container {
+  height: 200px;
+  border-bottom: 3px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-image: url("../Images/mae-mu-BxsGyQwjwaw-unsplash.jpg");
+}
+
+.logo img {
+  height: 300px;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: seashell;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: solid;
+}
+
+.mision {
+  background-image: url("../Images/rustipam.webp");
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  padding-top: 10rem;
+}
+
+.mision-content {
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  opacity: 0.9;
+  padding: 0.5rem;
+}
+
+.mision-content h2 {
+  color: seashell;
+  font-size: 3rem;
+}
+
+.mision-content h4 {
+  padding-top: 1.5rem;
+  color: seashell;
+  font-size: 2rem;
+}
+
+.productos-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.productos-header {
+  color: seashell;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.pan {
+  /* align-items: center;
+  height: 40rem;
+  width: 40rem; */
+  text-align: center;
+  background-color: #deb887; /* Burlywood */
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pan img {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.pan p {
+  font-size: 1.2rem;
+  color: black;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
